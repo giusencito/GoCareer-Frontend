@@ -22,9 +22,11 @@ import { EspecialistNavigationComponent } from './Especialist-navigation/Especia
 import { MessageComponent } from './Message/Message.component';
 import { AnswerMessageComponent } from './AnswerMessage/AnswerMessage.component';
 import { TextselectorComponent } from './textselector/textselector.component';
+import { TestmakerComponent } from './Testmaker/Testmaker.component';
+import { QuestionCreateComponent } from './QuestionCreate/QuestionCreate.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
     HomePageComponent,
       NavigationComponent,
@@ -40,7 +42,9 @@ import { TextselectorComponent } from './textselector/textselector.component';
       EspecialistNavigationComponent,
       MessageComponent,
       AnswerMessageComponent,
-      TextselectorComponent
+      TextselectorComponent,
+      TestmakerComponent,
+      QuestionCreateComponent
    ],
   imports: [
     BrowserModule,

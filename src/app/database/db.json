@@ -245,5 +245,119 @@
       "id": 5,
       "Respuesta": "De nada"
     }
+  ],
+  "Test": [
+    {
+      "id": 1,
+      "Personalized": false,
+      "EspecialistId": 1,
+      "Testname": "test comun 1"
+    },
+    {
+      "id": 2,
+      "Personalized": false,
+      "EspecialistId": 1,
+      "Testname": "test comun 1"
+    },
+    {
+      "id": 3,
+      "Personalized": true,
+      "EspecialistId": 1,
+      "Testname": "test para ingenieros"
+    },
+    {
+      "Testname": "Test Prueba",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 4
+    },
+    {
+      "Testname": "Test prueba 2",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 5
+    },
+    {
+      "Testname": "Test Prueba 21",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 6
+    },
+    {
+      "Testname": "Test Prueba 21",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 7
+    },
+    {
+      "Testname": "Test asa",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 8
+    },
+    {
+      "Testname": "Tesrrs",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 9
+    },
+    {
+      "Testname": "sasaddwq",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 10
+    },
+    {
+      "Testname": "dasqqwqw",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 11
+    },
+    {
+      "Testname": "Vamos",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 12
+    },
+    {
+      "Testname": "Testa",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 13
+    },
+    {
+      "Testname": "pop",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 14
+    },
+    {
+      "Testname": "push",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 15
+    },
+    {
+      "Testname": "Test a probar",
+      "EspecialistId": 1,
+      "Personalized": true,
+      "id": 16
+    }
+  ],
+  "Question": [
+    {
+      "id": 1,
+      "QuestionName": "¿Que es lo que te gusta?",
+      "TestId": 1,
+      "Score": 0
+    }
+  ],
+  "Option": [
+    {
+      "id": 1,
+      "OptionName": "proyectos",
+      "QuestionId": 1,
+      "optionpoint": 4
+    }
   ]
 }

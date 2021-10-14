@@ -1,0 +1,249 @@
+{
+  "Career": [
+    {
+      "id": 1,
+      "CareerName": "psicologia",
+      "CareerDescription": "Carrera de psicologia"
+    },
+    {
+      "id": 2,
+      "CareerName": "Arquitectura",
+      "CareerDescription": "Carrera de Arquitectura"
+    },
+    {
+      "id": 3,
+      "CareerName": "Derecho",
+      "CareerDescription": "Carrera de Derecho"
+    }
+  ],
+  "Article": [
+    {
+      "id": 1,
+      "ArticleName": "Articulo de psicologia",
+      "ArticleDescription": "Información de psicologia",
+      "CareerId": 1
+    },
+    {
+      "id": 2,
+      "ArticleName": "Articulo de Arquitectura",
+      "ArticleDescription": "Información de Arquitectura",
+      "CareerId": 2
+    },
+    {
+      "id": 3,
+      "ArticleName": "Articulo de Derecho",
+      "ArticleDescription": "Información de Derecho",
+      "CareerId": 3
+    },
+    {
+      "id": 4,
+      "ArticleName": "Articulo de Derecho",
+      "ArticleDescription": "Información de Derecho",
+      "CareerId": 3
+    },
+    {
+      "id": 5,
+      "ArticleName": "Articulo de psicologia",
+      "ArticleDescription": "Información de psicologia",
+      "CareerId": 1
+    },
+    {
+      "id": 6,
+      "ArticleName": "Articulo de psicologia",
+      "ArticleDescription": "Información de psicologia",
+      "CareerId": 2
+    },
+    {
+      "id": 7,
+      "ArticleName": "Articulo de Derecho",
+      "ArticleDescription": "Información de Derecho",
+      "CareerId": 3
+    },
+    {
+      "id": 8,
+      "ArticleName": "Articulo de Arquitectura",
+      "ArticleDescription": "Información de Arquitectura",
+      "CareerId": 2
+    },
+    {
+      "id": 9,
+      "ArticleName": "Articulo de Arquitectura",
+      "ArticleDescription": "Información de Arquitectura",
+      "CareerId": 2
+    }
+  ],
+  "User": [
+    {
+      "id": 1,
+      "UserName": "User1",
+      "UserLastName": "User1Lastname",
+      "UserEmail": "User1email@gmail.com",
+      "UserPassword": "User1Password"
+    },
+    {
+      "id": 2,
+      "UserName": "User2",
+      "UserLastName": "User2Lastname",
+      "UserEmail": "User2email@gmail.com",
+      "UserPassword": "User2Password"
+    },
+    {
+      "UserEmail": "giusencito@hotmail.com",
+      "UserName": "dasds",
+      "UserLastName": "dasdas",
+      "UserPassword": "dasd",
+      "id": 3
+    },
+    {
+      "UserEmail": "giusencito@hotmail.com",
+      "UserName": "Fourze",
+      "UserLastName": "Faiz",
+      "UserPassword": "leyenda",
+      "id": 4
+    }
+  ],
+  "Especialist": [
+    {
+      "id": 1,
+      "EspecialistName": "Especialist1",
+      "EspecialistLastName": "Especialist1Lastname",
+      "EspecialistEmail": "Especialist1email@gmail.com",
+      "EspecialistPassword": "Especialist1Password",
+      "EspecialistInformation": "Especialista desde hace 40 años"
+    },
+    {
+      "id": 2,
+      "EspecialistName": "Especialist2",
+      "EspecialistLastName": "Especialist2Lastname",
+      "EspecialistEmail": "Especialist2email@gmail.com",
+      "EspecialistPassword": "Especialist2Password",
+      "EspecialistInformation": "Especialista desde hace 20 años"
+    },
+    {
+      "id": 3,
+      "EspecialistName": "Especialist3",
+      "EspecialistLastName": "Especialist3Lastname",
+      "EspecialistEmail": "Especialist3email@gmail.com",
+      "EspecialistPassword": "Especialist3Password",
+      "EspecialistInformation": "Especialista desde hace 50 años"
+    },
+    {
+      "id": 4,
+      "EspecialistName": "Especialist4",
+      "EspecialistLastName": "Especialist4Lastname",
+      "EspecialistEmail": "Especialist4email@gmail.com",
+      "EspecialistPassword": "Especialist4Password",
+      "EspecialistInformation": "Especialista desde hace 30 años"
+    },
+    {
+      "EspecialistEmail": "Flavio@hotmail.com",
+      "EspecialistName": "Flavio",
+      "EspecialistLastName": "Bustamante",
+      "EspecialistPassword": "contraseña",
+      "EspecialistInformation": "Experto en neurologia",
+      "id": 5
+    }
+  ],
+  "Meeting": [
+    {
+      "id": 1,
+      "UserId": 3,
+      "EspecialistId": 2,
+      "Date": "11/10/2021",
+      "Hour": "9:10"
+    },
+    {
+      "id": 2,
+      "UserId": 4,
+      "EspecialistId": 3,
+      "Date": "11/10/2021",
+      "Hour": "9:10"
+    },
+    {
+      "id": 3,
+      "UserId": 3,
+      "EspecialistId": 1,
+      "Date": "17/10/2021",
+      "Hour": "10:10"
+    },
+    {
+      "EspecialistId": 2,
+      "Date": "2021-06-18T03:51:20.000Z",
+      "Hour": "2021-06-18T03:51:20.000Z",
+      "UserId": 3,
+      "id": 4
+    },
+    {
+      "EspecialistId": 2,
+      "Date": "2021-06-22T08:51:20.000Z",
+      "Hour": "2021-06-22T08:51:20.000Z",
+      "UserId": 3,
+      "id": 5
+    },
+    {
+      "EspecialistId": 2,
+      "Date": "2021-06-21T03:51:20.000Z",
+      "Hour": "2021-06-21T03:51:20.000Z",
+      "UserId": 3,
+      "id": 6
+    },
+    {
+      "EspecialistId": 4,
+      "Date": "2021-06-20T09:51:20.000Z",
+      "Hour": "2021-06-20T09:51:20.000Z",
+      "UserId": 3,
+      "id": 7
+    },
+    {
+      "EspecialistId": 4,
+      "Date": "2021-06-19T03:51:20.000Z",
+      "Hour": "2021-06-19T03:51:20.000Z",
+      "UserId": 3,
+      "id": 8
+    },
+    {
+      "EspecialistId": 4,
+      "Date": "2021-06-28T03:51:20.000Z",
+      "Hour": "2021-06-28T03:51:20.000Z",
+      "UserId": 3,
+      "id": 9
+    }
+  ],
+  "Message": [
+    {
+      "id": 1,
+      "MessageDescription": "Buenas",
+      "UserId": 3,
+      "EspecialistId": 1,
+      "Respuesta": "Gracias"
+    },
+    {
+      "id": 2,
+      "MessageDescription": "Buenas",
+      "UserId": 3,
+      "EspecialistId": 2,
+      "Respuesta": ""
+    },
+    {
+      "id": 3,
+      "MessageDescription": "Buenas",
+      "UserId": 4,
+      "EspecialistId": 2,
+      "Respuesta": ""
+    },
+    {
+      "id": 4,
+      "MessageDescription": "Buenas",
+      "UserId": 3,
+      "EspecialistId": 3,
+      "Respuesta": ""
+    },
+    {
+      "MessageDescription": "Hola quiero saludarte",
+      "UserId": 3,
+      "EspecialistId": 1,
+      "id": 5,
+      "Respuesta": "De nada"
+    }
+  ]
+}

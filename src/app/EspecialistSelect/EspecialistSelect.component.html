@@ -1,0 +1,28 @@
+
+<app-navigation></app-navigation>
+
+<div class="fondo">
+<mat-grid-list cols="2" row="2" rowHeight="400px">
+<mat-grid-tile *ngFor="let element of dataSource.data">
+<mat-card>
+<mat-card-header>
+<mat-card-title>{{element.EspecialistName}}  {{element.EspecialistLastName}}</mat-card-title>
+
+</mat-card-header>
+
+<mat-card-content>
+
+<h4>{{element.EspecialistInformation}}</h4>
+
+</mat-card-content>
+<mat-card-actions>
+
+<button mat-raised-button  (click)="especialistSelect(element.id)">Programar cita</button>
+
+</mat-card-actions>
+
+</mat-card>
+
+</mat-grid-tile>
+</mat-grid-list>
+</div>

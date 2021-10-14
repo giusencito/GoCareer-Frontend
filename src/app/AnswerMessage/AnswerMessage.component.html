@@ -1,0 +1,25 @@
+<app-Especialist-navigation></app-Especialist-navigation>
+
+
+
+<mat-card class="card">
+<mat-card-title class="title">{{messagdes}}</mat-card-title>
+
+<p>hecho por {{usernmae}}  {{userlast}}</p>
+
+
+  <h1 >Escriba su respuesta</h1>
+  <mat-form-field appearance="fill" class="area" [formGroup]="answerform">
+    <mat-label>Respuesta </mat-label>
+    <textarea formControlName="answer" matInput type="answer" [(ngModel)]="message.Respuesta"></textarea>
+  </mat-form-field>
+
+  <div class="button-row">
+    <button mat-raised-button class="burea"  [disabled]="!answerform.valid" (click)="Envio()">Enviar Mensaje</button>
+    <button mat-raised-button  class="burea" (click)="Limpiar()">Limpiar </button>
+      </div>
+
+
+
+
+</mat-card>

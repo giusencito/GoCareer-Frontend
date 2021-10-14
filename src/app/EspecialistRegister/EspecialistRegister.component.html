@@ -1,0 +1,60 @@
+<mat-grid-list cols="1" rowHeight=800px>
+  <mat-grid-tile>
+  <mat-card class="card">
+
+
+
+  <mat-card-title class="title"> Especialist Register</mat-card-title>
+
+  <mat-card-subtitle  class="sub">Please Enter your information</mat-card-subtitle>
+
+
+
+  <mat-card-content>
+
+    <form [formGroup]="signupform"  (submit)="onSubmit()"  #loginForm="ngForm">
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input  formControlName="email" [(ngModel)]="Especialist.EspecialistEmail" matInput type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" requiered>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <mat-error         *ngIf="signupform.controls['email'].dirty && signupform.hasError('required','email')">Es requerido</mat-error>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputName1">Name</label>
+        <input  formControlName="name"  [(ngModel)]="Especialist.EspecialistName" matInput type="Name" class="form-control" id="exampleInputName1" placeholder="Name" required>
+        <mat-error  *ngIf="signupform.controls['name'].dirty && signupform.hasError('required','name')">Es requerido</mat-error>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputLastName">LastName</label>
+        <input formControlName="lastname" [(ngModel)]="Especialist.EspecialistLastName"  matInput type="LastName" class="form-control" id="exampleInputLastName1" placeholder="LastName" required>
+        <mat-error  *ngIf="signupform.controls['lastname'].dirty && signupform.hasError('required','lastname')">Es requerido</mat-error>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input  formControlName="password" [(ngModel)]="Especialist.EspecialistPassword" matInput type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        <mat-error    *ngIf="signupform.controls['password'].dirty && signupform.hasError('required','password')">Es requerido</mat-error>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputInformation1">Information</label>
+        <textarea  formControlName="Information" [(ngModel)]="Especialist.EspecialistInformation" matInput type="Information" class="form-control" id="exampleInputInformation1" placeholder="Information" required></textarea>
+        <mat-error  *ngIf="signupform.controls['Information'].dirty && signupform.hasError('required','Information')">Es requerido</mat-error>
+      </div>
+
+
+
+      <button type="submit" mat-raised-button color="primary"  [disabled]="loginForm.form.invalid" class="butlogin">Submit</button>
+    </form>
+
+  </mat-card-content>
+   <mat-card-footer>
+    <a   style="color: #fff;margin-top:10px"  routerLink="/loginEspecialist"> Already register? Click to login</a>
+   </mat-card-footer>
+
+
+  </mat-card>
+  </mat-grid-tile>
+
+  </mat-grid-list>

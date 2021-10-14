@@ -1,0 +1,23 @@
+.butpages button{
+  margin: 8px 8px 8px 0;
+  width: 500px;
+  height: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  background-color: rgb(229, 127, 255);
+}
+.item{
+padding-top: 30px;
+
+
+}
+.imagehome{
+
+height:400px;
+cursor: pointer;
+}
+.fondo{
+
+background-color:coral;
+
+}

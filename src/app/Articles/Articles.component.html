@@ -1,0 +1,22 @@
+
+<app-navigation></app-navigation>
+
+<div class="page">
+<mat-grid-list cols="3" rowHeight="200px">
+<mat-grid-tile *ngFor="let element of dataSource.data" >
+
+<mat-card class="card">
+
+<mat-card-title>{{element.ArticleName}}</mat-card-title>
+<mat-card-subtitle> Carrera de {{element.Career}}</mat-card-subtitle>
+<mat-card-content>
+<p>{{element.ArticleDescription}}</p>
+
+</mat-card-content>
+
+</mat-card>
+
+
+</mat-grid-tile>
+</mat-grid-list>
+</div>

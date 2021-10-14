@@ -1,0 +1,17 @@
+.card{
+  width: 500px;
+
+  border: none;
+
+  background-color: rgb(0, 174, 255);
+
+  }
+  .title{
+
+    text-align: center;
+
+
+  }
+  .sub{
+    text-align: center;
+  }

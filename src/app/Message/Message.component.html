@@ -1,0 +1,22 @@
+
+<app-Especialist-navigation></app-Especialist-navigation>
+
+
+<mat-card class="card">
+
+<mat-card-title class="title"> Messages</mat-card-title>
+<mat-card-content>
+<mat-grid-list cols="3" rowHeight=200px>
+<mat-grid-tile *ngFor="let element of dataSource.data">
+<button mat-raised-button class="but" (click)="entermessage(element.id)">
+
+<p>{{element.MessageDescription}}</p>
+
+<p>Click para Responder</p>
+
+
+</button>
+</mat-grid-tile>
+</mat-grid-list>
+</mat-card-content>
+</mat-card>

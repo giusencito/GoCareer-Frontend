@@ -1,0 +1,17 @@
+.card {
+  width: 300px;
+
+  background-color:darkkhaki
+}
+.page{
+
+  background-color:coral;
+}
+.but{
+
+background-color: crimson;
+
+width:100%;
+font-size: 20px;
+color:aliceblue
+}

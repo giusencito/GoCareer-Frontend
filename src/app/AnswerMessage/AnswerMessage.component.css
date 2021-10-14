@@ -1,0 +1,22 @@
+.area
+{
+
+width: 100%;
+
+}
+.button-row button{
+  width: 42%;
+  margin:35px;
+  background-color:blueviolet
+}
+.title{
+
+  text-align: center;
+ font-size:50px;
+
+}
+.card{
+
+  background-color: aqua;
+
+  }

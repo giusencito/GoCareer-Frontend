@@ -1,0 +1,43 @@
+<app-navigation></app-navigation>
+<div class="page">
+
+<mat-grid-list cols="3" rowHeight="600px">
+
+  <mat-grid-tile *ngFor="let element of dataSource.data" >
+
+    <mat-card class="card">
+
+    <mat-card-title> Carrera de {{element.CareerName}}</mat-card-title>
+    <mat-card-content>
+    <p>{{element.CareerDescription}}</p>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+
+     <button mat-raised-button class="but" (click)="seearticles(element.id)">Ver articulos</button>
+
+    </mat-card-actions>
+
+    </mat-card>
+
+
+    </mat-grid-tile>
+
+
+
+
+
+
+
+</mat-grid-list>
+
+
+
+
+
+
+
+
+
+</div>

@@ -8,6 +8,7 @@ import { Meeting } from 'src/app/models/Meeting';
 })
 export class MeetingService {
   basePath='http://localhost:3000/Meeting';
+  basePathmeetingbyespecialist='http://localhost:3000/Especialist'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -62,7 +63,18 @@ create(item: any): Observable<Meeting> {
       catchError(this.handleError));
 }
 
+getallMeetingsbyespecialist(id:any){
 
+
+  return this.http.get<Meeting>(`${this.basePathmeetingbyespecialist}/${id}/Meeting`, this.httpOptions)
+  .pipe(
+    retry(2),
+    catchError(this.handleError));
+
+
+
+
+}
 
 
 

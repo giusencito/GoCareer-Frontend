@@ -1,0 +1,17 @@
+<app-Especialist-navigation></app-Especialist-navigation>
+<mat-grid-list [cols]="breakpoint" rowHeight="500px" (window:resize)="onResize($event)">
+<mat-grid-tile>
+<mat-card>
+<img src="https://media.discordapp.net/attachments/875462809150963742/899874033561141279/wPBy2vFPciUUxQAAAAAElFTkSuQmCC.png"
+  class="imagehome">
+<mat-card-title>{{actualEspecialistname}} {{actualEspecialistlastname}}</mat-card-title>
+</mat-card>
+</mat-grid-tile>
+<mat-grid-tile>
+<mat-card>
+  <img src="https://media.discordapp.net/attachments/875462809150963742/899874033561141279/wPBy2vFPciUUxQAAAAAElFTkSuQmCC.png"
+    class="imagehome">
+  <mat-card-title>{{actualUsername}} {{actualUserlastname}}</mat-card-title>
+</mat-card>
+</mat-grid-tile>
+</mat-grid-list>

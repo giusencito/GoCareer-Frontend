@@ -5,7 +5,7 @@
 <app-Especialist-navigation></app-Especialist-navigation>
 <div class="fondo">
   <h1>Welcome Especialist {{actualEspecialistname}}  {{actualEspecialistlastname}}</h1>
-  <mat-grid-list cols="2" rowHeight="700px">
+  <mat-grid-list [cols]="breakpoint" rowHeight="500px" (window:resize)="onResize($event)">
 
 <mat-grid-tile>
 

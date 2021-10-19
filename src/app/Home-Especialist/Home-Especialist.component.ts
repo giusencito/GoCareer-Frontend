@@ -14,10 +14,11 @@ export class HomeEspecialistComponent implements OnInit {
   public actualEspecialistname!:string;
   public actualEspecialistlastname!:string;
   actualEspecialist!: Especialist;
+  breakpoint!: number;
   constructor(private route:ActivatedRoute,private service:EspecialistService,private cd:Router) { }
 
   ngOnInit() {
-
+    this.breakpoint = (window.innerWidth <= 900) ? 1 : 2;
     let pod=parseInt(this.route.snapshot.paramMap.get('id')!);
     let id= pod;
     this.Especialistnumber=id;
@@ -65,7 +66,9 @@ entertestselector(){
 
 }
 
-
+onResize(event:any) {
+  this.breakpoint = (event.target.innerWidth <= 900) ? 1 : 2;
+}
 
 
 

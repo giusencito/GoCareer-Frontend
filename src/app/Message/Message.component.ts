@@ -11,6 +11,7 @@ import { UsersService } from '../services/Users/Users.service';
   styleUrls: ['./Message.component.css']
 })
 export class MessageComponent implements OnInit,AfterViewInit {
+  breakpoint!: number;
   dataSource !:MatTableDataSource<any>;
   especialistide!:number
   User!:User
@@ -28,7 +29,7 @@ export class MessageComponent implements OnInit,AfterViewInit {
    }
 
   ngOnInit() {
-
+    this.breakpoint = (window.innerWidth <= 700) ? 1 : 3;
    let pod=parseInt(this.router.snapshot.paramMap.get('id')!);
    let id= pod;
    this.especialistide=id;
@@ -97,7 +98,9 @@ entermessage(id:number){
 
 
 
-
+onResize(event:any) {
+  this.breakpoint = (event.target.innerWidth <= 700) ? 1 : 3;
+}
 
 
 

@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.imagehome{
+
+  height: 60%;
+  cursor: pointer;
+  }
+.card{
+
+
+    background-color: rgb(0, 174, 255);
+
+}
+.content p{
+
+font-family: 'Roboto';
+font-size: 25px;
+margin-top: 20%;
+}
+.mat-card-title{
+
+
+  font-size: 35px;
+
+
+
+}
+.but{
+
+width: 100%;
+
+
+}
+.icon{
+  margin-right: 1%;
+}
+.content
+ div p{
+  font-size: 15px;
+ }

@@ -1,3 +1,6 @@
+import { MeetingRoomEspecialistComponent } from './MeetingRoom-Especialist/MeetingRoom-Especialist.component';
+import { ReservedComponent } from './Reserved/Reserved.component';
+import { EspecialistProfileComponent } from './especialist-profile/especialist-profile.component';
 import { QuestionCreateComponent } from './QuestionCreate/QuestionCreate.component';
 import { TestmakerComponent } from './Testmaker/Testmaker.component';
 import { TextselectorComponent } from './textselector/textselector.component';
@@ -32,7 +35,10 @@ const routes: Routes = [
 {path:'Especialist/:id/Messages/:mesid',component:AnswerMessageComponent},
 {path:'Especialist/:id/Testselector',component:TextselectorComponent},
 {path:'Especialist/:id/Testselector/:type',component:TestmakerComponent},
-{path:'Especialist/:id/Testselector/:type/Test/:testid',component:QuestionCreateComponent}
+{path:'Especialist/:id/Testselector/:type/Test/:testid',component:QuestionCreateComponent},
+{path:'Especialist/:id/Profile',component:EspecialistProfileComponent},
+{path:'Especialist/:id/Profile/Meetings',component:ReservedComponent},
+{path:'Especialist/:id/Profile/Meetings/:metid/:userid',component:MeetingRoomEspecialistComponent}
 
 ];
 

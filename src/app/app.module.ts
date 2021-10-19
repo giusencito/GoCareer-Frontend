@@ -24,9 +24,12 @@ import { AnswerMessageComponent } from './AnswerMessage/AnswerMessage.component'
 import { TextselectorComponent } from './textselector/textselector.component';
 import { TestmakerComponent } from './Testmaker/Testmaker.component';
 import { QuestionCreateComponent } from './QuestionCreate/QuestionCreate.component';
+import { EspecialistProfileComponent } from './especialist-profile/especialist-profile.component';
+import { ReservedComponent } from './Reserved/Reserved.component';
+import { MeetingRoomEspecialistComponent } from './MeetingRoom-Especialist/MeetingRoom-Especialist.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [					
     AppComponent,
     HomePageComponent,
       NavigationComponent,
@@ -44,7 +47,10 @@ import { QuestionCreateComponent } from './QuestionCreate/QuestionCreate.compone
       AnswerMessageComponent,
       TextselectorComponent,
       TestmakerComponent,
-      QuestionCreateComponent
+      QuestionCreateComponent,
+      EspecialistProfileComponent,
+      ReservedComponent,
+      MeetingRoomEspecialistComponent
    ],
   imports: [
     BrowserModule,

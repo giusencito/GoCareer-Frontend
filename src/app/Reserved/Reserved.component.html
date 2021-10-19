@@ -1,0 +1,30 @@
+<app-Especialist-navigation></app-Especialist-navigation>
+
+<mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="onResize($event)" *ngFor="let element of dataSource.data">
+
+
+<mat-grid-tile>
+
+<mat-card>
+
+<mat-card-title>Consulta</mat-card-title>
+<p class="ro">{{getfecha(element.Date)}}</p>
+<p class="ro">{{gethour(element.Date)}}</p>
+<mat-card-actions>
+
+  <button mat-raised-button class="but" (click)="iraconsulta(element.id,element.UserId)"><mat-icon>forward</mat-icon>Reserva de consultas</button>
+</mat-card-actions>
+
+</mat-card>
+
+
+
+</mat-grid-tile>
+
+
+
+
+
+
+
+</mat-grid-list>

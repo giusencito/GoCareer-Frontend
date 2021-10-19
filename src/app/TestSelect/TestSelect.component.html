@@ -1,0 +1,45 @@
+
+<app-navigation></app-navigation>
+
+<mat-card>
+  <mat-card-title>Test Comunes</mat-card-title>
+  <mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="onResize($event)" >
+   <mat-grid-tile *ngFor="let element of dataSource1.data">
+<mat-card>
+   <mat-card-title>{{element.Testname}}</mat-card-title>
+
+  <button mat-button class="icon" (click)="entaraltest(element.id)"><mat-icon >chevron_right</mat-icon></button>
+</mat-card>
+   </mat-grid-tile>
+
+  </mat-grid-list>
+</mat-card>
+<mat-card>
+  <mat-card-title>Test Perzonalizados</mat-card-title>
+  <mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="onResize($event)" >
+
+    <mat-grid-tile *ngFor="let element of dataSource2.data">
+
+
+      <mat-card>
+        <mat-card-title>{{element.Testname}}</mat-card-title>
+
+       <button mat-button class="icon" (click)="entaraltest(element.id)"><mat-icon >chevron_right</mat-icon></button>
+     </mat-card>
+
+
+
+
+
+
+
+    </mat-grid-tile>
+
+
+
+
+  </mat-grid-list>
+
+
+
+</mat-card>

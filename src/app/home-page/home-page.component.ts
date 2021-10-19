@@ -35,7 +35,7 @@ export class HomePageComponent implements OnInit {
 
   }
 ngAfterViewInit(): void {
-  
+
 
 }
 
@@ -67,7 +67,12 @@ enterespecialist(){
 entercareer(){
   this.cd.navigate(['/User',this.Usernumber,'Careers'])
 }
+entertest(){
 
+
+  this.cd.navigate(['/User',this.Usernumber,'Test_Vocacional'])
+
+}
 
 
 

@@ -12,7 +12,8 @@ export class TestService {
 
 
   basePath='http://localhost:3000/Test'
-
+  basePathcommom='http://localhost:3000/Test?Personalized_like=false'
+  basePathperzo='http://localhost:3000/Test?Personalized_like=true'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -69,8 +70,24 @@ create(item: any): Observable<Test> {
       retry(2),
       catchError(this.handleError));
 }
+getallcommos(){
+  return this.http.get<Test>(this.basePathcommom, this.httpOptions)
+  .pipe(
+    retry(2),
+    catchError(this.handleError));
 
 
+}
+getallperzo(){
+
+  return this.http.get<Test>(this.basePathperzo, this.httpOptions)
+  .pipe(
+    retry(2),
+    catchError(this.handleError));
+
+
+
+}
 
 
 

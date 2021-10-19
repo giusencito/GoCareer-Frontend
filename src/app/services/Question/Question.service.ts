@@ -9,7 +9,7 @@ import { Question } from 'src/app/models/Question';
 export class QuestionService {
 
   basePath='http://localhost:3000/Question'
-
+basePathQuestionPerTest='http://localhost:3000/Test'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -66,7 +66,18 @@ create(item: any): Observable<Question> {
       retry(2),
       catchError(this.handleError));
 }
+getallQuestionsbyctest(id:any){
 
+
+  return this.http.get<Question>(`${this.basePathQuestionPerTest}/${id}/Question`, this.httpOptions)
+  .pipe(
+    retry(2),
+    catchError(this.handleError));
+
+
+
+
+}
 
 
 

@@ -257,7 +257,7 @@
       "id": 2,
       "Personalized": false,
       "EspecialistId": 1,
-      "Testname": "test comun 1"
+      "Testname": "test comun 2"
     },
     {
       "id": 3,
@@ -444,13 +444,13 @@
       "id": 9
     },
     {
-      "QuestionId": 4,
+      "QuestionId": 5,
       "OptionName": "Vocacion",
       "Optionpoint": 4,
       "id": 10
     },
     {
-      "QuestionId": 4,
+      "QuestionId": 5,
       "OptionName": "Empleabilidad",
       "Optionpoint": 2,
       "id": 11

@@ -1,9 +1,41 @@
+
+<app-Especialist-navigation></app-Especialist-navigation>
+
 <mat-card>
 
+<div [formGroup]="Questionform">
+<mat-card-title >Cree Preguntas</mat-card-title>
+<input matinput  formControlName="questionname" [(ngModel)]="Question.QuestionName"  placeholder="Enter a Question" requiered class="form-control"  type="Questionname" >
+<button mat-raised-button class="buto"   [disabled]="!Questionform.valid ||questioncreate" (click)="crearpregunta()">Crear Pregunta</button>
+</div>
+<div>
+<mat-card class="card" [hidden]="isHidden" [formGroup]="Optionform">
+  <mat-card-title >Cree una opcion</mat-card-title>
+  <mat-card-content >
+<mat-grid-list cols="3" rowHeight="100px" >
+  <mat-grid-tile>
+    <label>Nombre de opcion:</label>
+    <input matinput formControlName="optionname" requiered class="form-control"  type="Optionname" >
+  </mat-grid-tile>
+<mat-grid-tile>
+    <label>Puntaje de la opcion:</label>
+    <input matinput formControlName="optinscore"  requiered class="form-control"  type="Optionscore" >
+  </mat-grid-tile>
+<mat-grid-tile>
+    <button mat-raised-button [disabled]="!Optionform.valid" (click)="crearopcion()">CREAR </button>
+  </mat-grid-tile>
+  </mat-grid-list>
+  </mat-card-content>
+  <mat-card-footer align="right">
+    <button mat-button (click)="terminar()">Terminar</button>
+  </mat-card-footer>
+</mat-card>
 
-<mat-card-title>Cree Preguntas</mat-card-title>
 
-
+</div>
 
 
 </mat-card>
+<div align="end">
+  <button mat-raised-button (click)="regresar()">Regresar</button>
+  </div>

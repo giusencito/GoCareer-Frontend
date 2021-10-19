@@ -1,3 +1,5 @@
+import { QuestionCreateComponent } from './QuestionCreate/QuestionCreate.component';
+import { TestmakerComponent } from './Testmaker/Testmaker.component';
 import { TextselectorComponent } from './textselector/textselector.component';
 import { AnswerMessageComponent } from './AnswerMessage/AnswerMessage.component';
 import { MessageComponent } from './Message/Message.component';
@@ -28,7 +30,9 @@ const routes: Routes = [
 {path:'Especialist/:id',component:HomeEspecialistComponent},
 {path:'Especialist/:id/Messages',component:MessageComponent},
 {path:'Especialist/:id/Messages/:mesid',component:AnswerMessageComponent},
-{path:'Especialist/:id/Testselector',component:TextselectorComponent}
+{path:'Especialist/:id/Testselector',component:TextselectorComponent},
+{path:'Especialist/:id/Testselector/:type',component:TestmakerComponent},
+{path:'Especialist/:id/Testselector/:type/Test/:testid',component:QuestionCreateComponent}
 
 ];
 

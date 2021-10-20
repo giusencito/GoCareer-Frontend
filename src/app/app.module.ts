@@ -30,9 +30,11 @@ import { MeetingRoomEspecialistComponent } from './MeetingRoom-Especialist/Meeti
 import { TestComponent } from './Test/Test.component';
 import { TestSelectComponent } from './TestSelect/TestSelect.component';
 import { OptionComponent } from './Option/Option.component';
+import { ResultComponent } from './Result/Result.component';
+import { UserProfileComponent } from './User-Profile/User-Profile.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [										
     AppComponent,
     HomePageComponent,
       NavigationComponent,
@@ -56,7 +58,9 @@ import { OptionComponent } from './Option/Option.component';
       MeetingRoomEspecialistComponent,
       TestComponent,
       TestSelectComponent,
-      OptionComponent
+      OptionComponent,
+      ResultComponent,
+      UserProfileComponent
    ],
   imports: [
     BrowserModule,

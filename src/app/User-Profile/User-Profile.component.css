@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.imagehome{
+
+  height: 60%;
+  cursor: pointer;
+  }
+.card{
+
+    min-width: 60%;
+    min-height: 30%;
+    background-color: rgb(0, 174, 255);
+
+}
+.content p{
+
+font-family: 'Roboto';
+font-size: 25px;
+margin-top: 40%;
+}
+.mat-card-title{
+
+
+  font-size: 35px;
+
+
+
+}
+.but{
+  margin-top: 40%;
+width: 100%;
+
+
+}
+.icon{
+  margin-right: 1%;
+}
+.content
+ div p{
+  font-size: 15px;
+ }
+.wer
+{
+background-image: url("https://cdn.discordapp.com/attachments/875462809150963742/900252418053373982/d5fe001c24c5ea0492203958b0763780.png");
+
+}

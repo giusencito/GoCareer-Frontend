@@ -16,6 +16,7 @@ public testnumber!:number
 public testtitle!:string
 breakpoint!: number;
 Test!:Test
+datohijo:number=0
 dataSource1 !:MatTableDataSource<any>;
   constructor(private service:TestService,private cd:Router,private route:ActivatedRoute,private service2:QuestionService)
   {
@@ -56,6 +57,23 @@ dataSource1 !:MatTableDataSource<any>;
 
 
   }
+
+  Respuestarecibida(e:any){
+
+      console.log(e)
+      this.datohijo=e+this.datohijo;
+
+  }
+
+
+terminartest(){
+
+
+
+  this.cd.navigate(['/User',this.Usernumber,'Test_Vocacional',this.testnumber,'Result', this.datohijo])
+
+
+}
 
 
 

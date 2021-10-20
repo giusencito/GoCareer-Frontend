@@ -1,14 +1,15 @@
 
 
-<div *ngFor="let element of dataSource1.data">
-<mat-radio-group   >
-<mat-radio-button  class="example-margin" [checked]="false" >{{element.OptionName}}</mat-radio-button>
-<p>{{getvalor(dataSource1.data.indexOf(element))}}</p>
-</mat-radio-group>
 
 
 
+
+
+
+
+<mat-radio-group [hidden]="disable">
+<div *ngFor="let element of dataSource1.data" >
+<mat-radio-button value={{dataSource1.data.indexOf(element)}}    (click)="changevalue(dataSource1.data.indexOf(element))" >{{element.OptionName}}</mat-radio-button>
 
 </div>
-
-
+</mat-radio-group>

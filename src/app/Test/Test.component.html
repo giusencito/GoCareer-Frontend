@@ -3,13 +3,14 @@
 <mat-card>
 
   <mat-card-title>{{testtitle}}</mat-card-title>
-  <mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="onResize($event)" >
+  <mat-grid-list [cols]="breakpoint" rowHeight="400px" (window:resize)="onResize($event)" >
 
   <mat-grid-tile  *ngFor="let element of dataSource1.data">
 
-    <mat-card>
+    <mat-card class="card">
       <mat-card-title>{{element.QuestionName}}</mat-card-title>
-      <app-Option [idquestion]='element.id' ></app-Option>
+      <app-Option [idquestion]='element.id' (respuesta)="Respuestarecibida($event)"></app-Option>
+
     </mat-card>
 
 
@@ -23,5 +24,5 @@
   </mat-grid-list>
 
 
-
+  <button mat-raised-button class="but" (click)="terminartest()">Terminar Test</button>
 </mat-card>

@@ -1,3 +1,5 @@
+import { UserProfileComponent } from './User-Profile/User-Profile.component';
+import { ResultComponent } from './Result/Result.component';
 import { TestComponent } from './Test/Test.component';
 import { TestSelectComponent } from './TestSelect/TestSelect.component';
 import { MeetingRoomEspecialistComponent } from './MeetingRoom-Especialist/MeetingRoom-Especialist.component';
@@ -42,7 +44,9 @@ const routes: Routes = [
 {path:'Especialist/:id/Profile/Meetings',component:ReservedComponent},
 {path:'Especialist/:id/Profile/Meetings/:metid/:userid',component:MeetingRoomEspecialistComponent},
 {path:'User/:id/Test_Vocacional',component:TestSelectComponent},
-{path:'User/:id/Test_Vocacional/:testid',component:TestComponent}
+{path:'User/:id/Test_Vocacional/:testid',component:TestComponent},
+{path:'User/:id/Test_Vocacional/:testid/Result/:resultid',component:ResultComponent},
+{path:'User/:id/Profile',component:UserProfileComponent}
 
 ];
 

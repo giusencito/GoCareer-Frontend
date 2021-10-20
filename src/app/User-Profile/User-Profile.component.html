@@ -1,0 +1,29 @@
+<app-navigation></app-navigation>
+<div class="wer">
+<mat-grid-list [cols]="breakpoint" rowHeight="900px" (window:resize)="onResize($event)" >
+<mat-grid-tile>
+  <img src="https://media.discordapp.net/attachments/875462809150963742/899845615889051678/Z.png"
+   class="imagehome">
+ </mat-grid-tile>
+
+
+ <mat-grid-tile>
+
+   <mat-card class="card">
+
+
+   <mat-card-title>Profile</mat-card-title>
+
+ <mat-card-content class="content">
+   <p>Nombre: {{actualusertname}} {{actualuserlastname}}</p>
+
+   <p>Email: {{actualuseremail}}</p>
+
+ </mat-card-content>
+  <button mat-raised-button class="but" (click)="GotoMeetings()"><mat-icon class="icon">event_seat</mat-icon>Reserva de consultas</button>
+
+   </mat-card>
+ </mat-grid-tile>
+ </mat-grid-list>
+
+</div>

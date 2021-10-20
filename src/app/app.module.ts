@@ -27,9 +27,14 @@ import { QuestionCreateComponent } from './QuestionCreate/QuestionCreate.compone
 import { EspecialistProfileComponent } from './especialist-profile/especialist-profile.component';
 import { ReservedComponent } from './Reserved/Reserved.component';
 import { MeetingRoomEspecialistComponent } from './MeetingRoom-Especialist/MeetingRoom-Especialist.component';
+import { TestComponent } from './Test/Test.component';
+import { TestSelectComponent } from './TestSelect/TestSelect.component';
+import { OptionComponent } from './Option/Option.component';
+import { ResultComponent } from './Result/Result.component';
+import { UserProfileComponent } from './User-Profile/User-Profile.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [										
     AppComponent,
     HomePageComponent,
       NavigationComponent,
@@ -50,7 +55,12 @@ import { MeetingRoomEspecialistComponent } from './MeetingRoom-Especialist/Meeti
       QuestionCreateComponent,
       EspecialistProfileComponent,
       ReservedComponent,
-      MeetingRoomEspecialistComponent
+      MeetingRoomEspecialistComponent,
+      TestComponent,
+      TestSelectComponent,
+      OptionComponent,
+      ResultComponent,
+      UserProfileComponent
    ],
   imports: [
     BrowserModule,

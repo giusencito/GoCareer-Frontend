@@ -16,6 +16,71 @@
       "CareerDescription": "Carrera de Derecho"
     }
   ],
+  "Work":[
+    {
+
+      "id": 1,
+      "WorkName": "Trabajo de psicologia 1",
+      "WorkDescription": "Información del trabajo psicologia 1",
+      "CareerId": 1
+
+    },
+    {
+      "id": 2,
+      "WorkName": "Trabajo de psicologia 2",
+      "WorkDescription": "Información del trabajo psicologia 2",
+      "CareerId": 1
+    },
+    {
+      "id": 3,
+      "WorkName": "Trabajo de Arquitectura 1",
+      "WorkDescription": "Información del trabajo Arquitectura 1",
+      "CareerId": 2
+    },
+    {
+      "id": 4,
+      "WorkName": "Trabajo de psicologia 3",
+      "WorkDescription": "Información del trabajo psicologia 3",
+      "CareerId": 1
+    },
+    {
+      "id": 5,
+      "WorkName": "Trabajo de Arquitectura 2",
+      "WorkDescription": "Información del trabajo Arquitectura 2",
+      "CareerId": 2
+
+    },
+    {
+
+      "id": 6,
+      "WorkName": "Trabajo de Arquitectura 3",
+      "WorkDescription": "Información del trabajo Arquitectura 3",
+      "CareerId": 2
+    },
+    {
+      "id": 7,
+      "WorkName": "Trabajo de Derecho 1",
+      "WorkDescription": "Información del trabajo Derecho 1",
+      "CareerId": 3
+    },
+    {
+      "id": 8,
+      "WorkName": "Trabajo de Derecho 2",
+      "WorkDescription": "Información del trabajo Derecho 2",
+      "CareerId": 3
+    },
+    {
+      "id": 9,
+      "WorkName": "Trabajo de Derecho 2",
+      "WorkDescription": "Información del trabajo Derecho 2",
+      "CareerId": 3
+    }
+
+
+
+
+
+  ],
   "Article": [
     {
       "id": 1,
@@ -257,7 +322,7 @@
       "id": 2,
       "Personalized": false,
       "EspecialistId": 1,
-      "Testname": "test comun 1"
+      "Testname": "test comun 2"
     },
     {
       "id": 3,
@@ -444,13 +509,13 @@
       "id": 9
     },
     {
-      "QuestionId": 4,
+      "QuestionId": 5,
       "OptionName": "Vocacion",
       "Optionpoint": 4,
       "id": 10
     },
     {
-      "QuestionId": 4,
+      "QuestionId": 5,
       "OptionName": "Empleabilidad",
       "Optionpoint": 2,
       "id": 11

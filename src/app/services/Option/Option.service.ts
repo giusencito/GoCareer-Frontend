@@ -10,7 +10,7 @@ import {catchError, retry} from "rxjs/operators";
 export class OptionService {
 
   basePath='http://localhost:3000/Option'
-
+basePathOptionsPerQuestion='http://localhost:3000/Question'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -67,6 +67,26 @@ create(item: any): Observable<Option> {
       retry(2),
       catchError(this.handleError));
 }
+
+
+getallOptionsbyQuestion(id:any){
+
+
+  return this.http.get<Option>(`${this.basePathOptionsPerQuestion}/${id}/Option`, this.httpOptions)
+  .pipe(
+    retry(2),
+    catchError(this.handleError));
+
+
+
+
+}
+
+
+
+
+
+
 
 
 }

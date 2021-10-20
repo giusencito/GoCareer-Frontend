@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+<mat-radio-group [hidden]="disable">
+<div *ngFor="let element of dataSource1.data" >
+<mat-radio-button value={{dataSource1.data.indexOf(element)}}    (click)="changevalue(dataSource1.data.indexOf(element))" >{{element.OptionName}}</mat-radio-button>
+
+</div>
+</mat-radio-group>

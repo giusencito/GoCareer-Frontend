@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Work } from 'src/app/models/Work';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
 import {catchError, retry} from "rxjs/operators";
-import { Question } from 'src/app/models/Question';
 @Injectable({
   providedIn: 'root'
 })
-export class QuestionService {
+export class WorkService {
 
-  basePath='http://localhost:3000/Question'
-basePathQuestionPerTest='http://localhost:3000/Test'
+
+  basePath='http://localhost:3000/Work';
+  basePathcareerWorks='http://localhost:3000/Career'
+
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -17,9 +19,7 @@ basePathQuestionPerTest='http://localhost:3000/Test'
   }
 
 
-constructor(private http:HttpClient) { }
-
-
+constructor(private http: HttpClient) { }
 handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {
     console.log(`An error occurred: ${error.error.message} `);
@@ -33,22 +33,21 @@ handleError(error: HttpErrorResponse) {
   return throwError('Something happened with request, please try again later');
 }
 
-
-getById(id: any): Observable<Question> {
-  return this.http.get<Question>(`${this.basePath}/${id}`, this.httpOptions)
+getById(id: any): Observable<Work> {
+  return this.http.get<Work>(`${this.basePath}/${id}`, this.httpOptions)
     .pipe(
       retry(2),
       catchError(this.handleError));
 }
-getAll(): Observable<Question> {
-  return this.http.get<Question>(this.basePath, this.httpOptions)
+getAll(): Observable<Work> {
+  return this.http.get<Work>(this.basePath, this.httpOptions)
     .pipe(
       retry(2),
       catchError(this.handleError));
 }
 
-update(id: any, item: any): Observable<Question> {
-  return this.http.put<Question>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+update(id: any, item: any): Observable<Work> {
+  return this.http.post<Work>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
     .pipe(
       retry(2),
       catchError(this.handleError));
@@ -60,16 +59,10 @@ delete(id: any) {
       catchError(this.handleError));
 }
 
-create(item: any): Observable<Question> {
-  return this.http.post<Question>(this.basePath, JSON.stringify(item), this.httpOptions)
-    .pipe(
-      retry(2),
-      catchError(this.handleError));
-}
-getallQuestionsbyctest(id:any){
+getallworksbycarreer(id:any){
 
 
-  return this.http.get<Question>(`${this.basePathQuestionPerTest}/${id}/Question`, this.httpOptions)
+  return this.http.get<Work>(`${this.basePathcareerWorks}/${id}/Work`, this.httpOptions)
   .pipe(
     retry(2),
     catchError(this.handleError));
@@ -78,43 +71,6 @@ getallQuestionsbyctest(id:any){
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

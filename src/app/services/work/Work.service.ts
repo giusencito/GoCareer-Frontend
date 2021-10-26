@@ -73,7 +73,12 @@ getallworksbycarreer(id:any){
 }
 
 
-
+create(item: any): Observable<Work> {
+  return this.http.post<Work>(this.basePath, JSON.stringify(item), this.httpOptions)
+    .pipe(
+      retry(2),
+      catchError(this.handleError));
+}
 
 
 

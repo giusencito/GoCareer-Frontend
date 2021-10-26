@@ -1,16 +1,40 @@
+import { Especialist } from 'src/app/models/Especialist';
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
 import { EspecialistService } from './Especialist.service';
-
+import {HttpClientTestingModule,HttpTestingController} from '@angular/common/http/testing';
+import {HttpClientModule} from '@angular/common/http';
 describe('Service: Especialist', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       providers: [EspecialistService]
     });
   });
 
-  it('should ...', inject([EspecialistService], (service: EspecialistService) => {
+  it('should be created', () => {
+    const service: EspecialistService = TestBed.get(EspecialistService);
     expect(service).toBeTruthy();
-  }));
+ });
+
+ it('should have getData function', () => {
+    const service: EspecialistService = TestBed.get(EspecialistService);
+    expect(service.getAll()).toBeTruthy();
+ });
+ it('should have post function', () => {
+  const newEmp:Especialist= {Especialistid:1,EspecialistName:"aaaa",EspecialistLastName:"bbbb",EspecialistEmail:"ccc",EspecialistPassword:"aaass",EspecialistInformation:"aaasq"} ;
+  const service: EspecialistService = TestBed.get(EspecialistService);
+  expect(service.create(newEmp)).toBeTruthy();
+});
+it('should have update function', () => {
+  const newEmp:Especialist= {Especialistid:1,EspecialistName:"aaaa",EspecialistLastName:"bbbb",EspecialistEmail:"ccc",EspecialistPassword:"aaass",EspecialistInformation:"aaasq"} ;
+  const service: EspecialistService = TestBed.get(EspecialistService);
+  expect(service.update(1,newEmp)).toBeTruthy();
+});
+it('should have delete function', () => {
+  const service: EspecialistService = TestBed.get(EspecialistService);
+  expect(service.delete(1)).toBeTruthy();
+});
+
 });

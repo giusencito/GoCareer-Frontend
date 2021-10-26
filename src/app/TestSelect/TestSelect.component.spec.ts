@@ -4,13 +4,17 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { TestSelectComponent } from './TestSelect.component';
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from "@angular/router/testing";
+import { RouterModule } from '@angular/router';
+import { HttpClientTestingModule } from "@angular/common/http/testing"
 describe('TestSelectComponent', () => {
   let component: TestSelectComponent;
   let fixture: ComponentFixture<TestSelectComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[RouterTestingModule,RouterModule.forRoot([]),HttpClientTestingModule,ReactiveFormsModule],
       declarations: [ TestSelectComponent ]
     })
     .compileComponents();

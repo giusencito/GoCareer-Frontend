@@ -4,13 +4,17 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { EspecialistRegisterComponent } from './EspecialistRegister.component';
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from "@angular/router/testing";
+import { RouterModule } from '@angular/router';
+import { HttpClientTestingModule } from "@angular/common/http/testing"
 describe('EspecialistRegisterComponent', () => {
   let component: EspecialistRegisterComponent;
   let fixture: ComponentFixture<EspecialistRegisterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[RouterTestingModule,RouterModule.forRoot([]),HttpClientTestingModule,ReactiveFormsModule],
       declarations: [ EspecialistRegisterComponent ]
     })
     .compileComponents();

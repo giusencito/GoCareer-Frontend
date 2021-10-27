@@ -8,6 +8,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from "@angular/router/testing";
 import { RouterModule } from '@angular/router';
 import { HttpClientTestingModule } from "@angular/common/http/testing"
+//testeo
 describe('TestmakerComponent', () => {
   let component: TestmakerComponent;
   let fixture: ComponentFixture<TestmakerComponent>;

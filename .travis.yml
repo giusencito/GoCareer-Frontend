@@ -20,3 +20,12 @@ script:
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 notifications:
  email: xskulldragon@gmail.com
+
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep-history: true
+  api-key:
+    secure: $HEROKU_API_KEY
+  app: gocareer

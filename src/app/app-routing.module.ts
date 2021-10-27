@@ -24,7 +24,7 @@ import { CareerComponent } from './Career/Career.component';
 import { HomeEspecialistComponent } from './Home-Especialist/Home-Especialist.component';
 
 const routes: Routes = [
-{path:'',component:HomePageComponent},
+{path:'',component:StudentLoginComponent},
 {path:'User/:id',component:HomePageComponent},
 {path:'User/:id/Careers/:careerid',component:ArticlesComponent},
 {path:'loginstudent',component:StudentLoginComponent},

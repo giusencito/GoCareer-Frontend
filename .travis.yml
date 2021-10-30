@@ -27,5 +27,5 @@ deploy:
   skip_cleanup: true
   keep-history: true
   api-key:
-    secure: $HEROKU_API_KEY
+    secure: 8bc4e63c-be5a-48fb-a468-38872b00aff6
   app: gocareer

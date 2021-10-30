@@ -20,7 +20,7 @@
     <mat-grid-tile  *ngFor="let element of fechas">
 
 
-<button mat-raised-button (click)="getmeeting(element)"> {{element | date:'yyyy-MM-dd hh:mm'}}</button>
+<button mat-raised-button class="getmeeting" (click)="getmeeting(element)"> {{element | date:'yyyy-MM-dd hh:mm'}}</button>
 
 
 </mat-grid-tile>

@@ -16,14 +16,12 @@
       "CareerDescription": "Carrera de Derecho"
     }
   ],
-  "Work":[
+  "Work": [
     {
-
       "id": 1,
       "WorkName": "Trabajo de psicologia 1",
       "WorkDescription": "Información del trabajo psicologia 1",
       "CareerId": 1
-
     },
     {
       "id": 2,
@@ -48,10 +46,8 @@
       "WorkName": "Trabajo de Arquitectura 2",
       "WorkDescription": "Información del trabajo Arquitectura 2",
       "CareerId": 2
-
     },
     {
-
       "id": 6,
       "WorkName": "Trabajo de Arquitectura 3",
       "WorkDescription": "Información del trabajo Arquitectura 3",
@@ -75,11 +71,6 @@
       "WorkDescription": "Información del trabajo Derecho 2",
       "CareerId": 3
     }
-
-
-
-
-
   ],
   "Article": [
     {
@@ -154,8 +145,8 @@
     },
     {
       "UserEmail": "giusencito@hotmail.com",
-      "UserName": "dasds",
-      "UserLastName": "dasdas",
+      "UserName": "Mauricio",
+      "UserLastName": "Paredes",
       "UserPassword": "dasd",
       "id": 3
     },
@@ -272,6 +263,13 @@
       "Hour": "2021-06-28T03:51:20.000Z",
       "UserId": 3,
       "id": 9
+    },
+    {
+      "EspecialistId": 1,
+      "Date": "2021-06-18T03:51:20.000Z",
+      "Hour": "2021-06-18T03:51:20.000Z",
+      "UserId": 3,
+      "id": 10
     }
   ],
   "Message": [
@@ -413,6 +411,12 @@
       "EspecialistId": 1,
       "Personalized": false,
       "id": 17
+    },
+    {
+      "Testname": "Test para abogados",
+      "EspecialistId": 5,
+      "Personalized": true,
+      "id": 18
     }
   ],
   "Question": [
@@ -451,6 +455,12 @@
       "Score": 0,
       "TestId": 17,
       "id": 6
+    },
+    {
+      "QuestionName": "¿es etico?",
+      "Score": 0,
+      "TestId": 18,
+      "id": 7
     }
   ],
   "Option": [
@@ -537,6 +547,18 @@
       "OptionName": "Puntualidad",
       "Optionpoint": 1,
       "id": 14
+    },
+    {
+      "QuestionId": 7,
+      "OptionName": "Si",
+      "Optionpoint": 1,
+      "id": 15
+    },
+    {
+      "QuestionId": 7,
+      "OptionName": "no",
+      "Optionpoint": 3,
+      "id": 16
     }
   ]
 }

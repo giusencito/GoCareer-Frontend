@@ -32,6 +32,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.2",
+    "@angular/cli": "^12.2.12",
+    "@angular/compiler-cli": "^12.1.5",
     "@types/chai": "^4.2.22",
     "@types/cucumber": "^7.0.0",
     "@types/jasmine": "~3.8.0",
@@ -45,7 +47,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "protractor-cucumber-framework": "^8.2.6"
+    "protractor-cucumber-framework": "^8.2.6",
+    "typescript": "~4.3.2"
   },
   "engines": {
     "node": "14.17.6",

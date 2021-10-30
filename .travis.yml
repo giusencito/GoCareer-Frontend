@@ -1,31 +1,23 @@
 dist: trusty
 sudo: false
-
 language: node_js
 node_js:
-  - '14'
-
+- '14'
 addons:
   chrome: stable
-
-
 cache:
   directories:
-    - ./node_modules
-
+  - "./node_modules"
 install:
-  - npm install
-
+- npm install
 script:
-  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+- npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 notifications:
- email: xskulldragon@gmail.com
-
-
+  email: xskulldragon@gmail.com
 deploy:
   provider: heroku
   skip_cleanup: true
   keep-history: true
-  api-key:
-    secure: 8bc4e63c-be5a-48fb-a468-38872b00aff6
   app: gocareer
+  api_key:
+    secure: jORjGZH+/jrgvjTlq4lC6brJobH4oPsp1J+priesA21VIVBsYdXyW08ZVVW0Lcu8CDBuP0jWMZDVAzoYj4rDMjMcQQw6C9hcPvJU88Bgiy/SvphONcE9cyY909M/J4mG0KM15uoSxWur9LGIgKbhVB1RIsuU3kAcos3Q/9AMVyAYmFOLXo4gNtwh2WfRoWl0ijJhZtOq61Z8BT+wLCyjXBkF+7Tn+/SL2I9yZcY78TrEXLKk+TgUoc5vddZJhO6ar4l0D6ADg+Q9BIBqsDi57k09SMKj+ZGBR1fiPdonaXpb7H+xXfTcraFBsdY1a5CYngFxWegeK84O3DKvrATOxSU+3JrM6SYJDYwcmt0nyz/pD2yyS0XWvabd4GpW2xE7iKmUO3zyXqVB/kP+Jr1JcYLtv7ELHtzdOlH9NMtQDF2ANIJ7ILQ1bxW+hZ7tkcgbeZ6Yz6YD9FJD6rqnuH4cKD/ZSscloTcpOjNbGoqFuzwjPFZU03xOY7mXuCFM7NQmUMltEQRKBYWK7XSfX362W+0sS2Tcm3qXTz24rE1ZqaWDMlj4fLR7ssFFjfZDzZLWbGleJIE6P3oPz68e3mXHKVDp/jPPnLQ+TIjti/KGbY8lKzG8QrUFVX3WcLeGJHrJUhH2RZAEYqsv8g1BKAswO1ZGoFPd1Y0/J9DFrEvSzfk=

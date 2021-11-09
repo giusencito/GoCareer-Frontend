@@ -1,9 +1,8 @@
 export interface Career
 {
-id:number,
-CareerName:string,
-CareerDescription:string
-
+  careerid:number,
+  careerName:string,
+  careerDescription:string
 
 
 }

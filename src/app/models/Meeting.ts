@@ -1,7 +1,7 @@
 export interface Meeting {
-  id:number,
-  UserId:number,
-  EspecialistId:number,
-  Date:Date,
-  Hour:Date
+  meetingId:number,
+  userId:number,
+  especialistId:number,
+  date:Date,
+  hour:Date
 }

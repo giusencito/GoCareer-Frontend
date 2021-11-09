@@ -55,7 +55,7 @@ getidCareer(id:number){
 
 this.Career =response;
 console.log(this.Career);
- this.careername1=this.Career.CareerName;
+ this.careername1=this.Career.careerName;
 
   });
 

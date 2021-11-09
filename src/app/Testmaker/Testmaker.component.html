@@ -3,7 +3,7 @@
 
 <mat-card-title class="title">Nuevo Test Vocacional </mat-card-title>
 
-<input matinput  formControlName="testname" [(ngModel)]="Test.Testname"  placeholder="Enter a Name" requiered class="form-control"  type="testname">
+<input matinput  formControlName="testname" [(ngModel)]="Test.testname"  placeholder="Enter a Name" requiered class="form-control"  type="testname">
 <mat-card-actions class="actions">
 <button mat-raised-button class="burea" [disabled]="!testform.valid" (click)="creartest()">Continuar</button>
 <button mat-raised-button class="burea" (click)="regresar()">Regresar</button>

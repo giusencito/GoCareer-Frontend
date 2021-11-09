@@ -7,7 +7,7 @@ import { Especialist } from 'src/app/models/Especialist';
   providedIn: 'root'
 })
 export class EspecialistService {
-  basePath='http://localhost:3000/Especialist';
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Especialists';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

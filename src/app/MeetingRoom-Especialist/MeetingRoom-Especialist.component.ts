@@ -45,9 +45,9 @@ export class MeetingRoomEspecialistComponent implements OnInit {
 
       this.actualEspecialist=response;
        console.log(this.actualEspecialist);
-   this.actualEspecialistname=this.actualEspecialist.EspecialistName;
+   this.actualEspecialistname=this.actualEspecialist.especialistName;
    console.log(this.actualEspecialistname)
-   this.actualEspecialistlastname=this.actualEspecialist.EspecialistLastName;
+   this.actualEspecialistlastname=this.actualEspecialist.especialistLastName;
 
     });
 
@@ -62,9 +62,9 @@ export class MeetingRoomEspecialistComponent implements OnInit {
 
       this.actualUser=response;
        console.log(this.actualUser);
-   this.actualUsername=this.actualUser.UserName;
+   this.actualUsername=this.actualUser.userName;
    console.log(this.actualUsername)
-   this.actualUserlastname=this.actualUser.UserLastName;
+   this.actualUserlastname=this.actualUser.userLastname;
 
     });
 

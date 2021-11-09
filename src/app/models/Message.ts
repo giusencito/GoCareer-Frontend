@@ -1,10 +1,10 @@
 
 export interface Message {
-  id:number;
-  MessageDescription:string;
-  UserId:number;
-  EspecialistId:number;
-  Respuesta:string;
+  messageid:number;
+  messageDescription:string;
+  userId:number;
+  especialistId:number;
+  answer:string;
 
 
 

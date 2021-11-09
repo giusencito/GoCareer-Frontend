@@ -307,6 +307,18 @@
       "EspecialistId": 1,
       "id": 5,
       "Respuesta": "De nada"
+    },
+    {
+      "messageDescription": "buenas tardes ",
+      "userId": 2,
+      "especialistId": 1,
+      "id": 6
+    },
+    {
+      "messageDescription": "buenas tardes",
+      "userId": 2,
+      "especialistId": 1,
+      "id": 7
     }
   ],
   "Test": [

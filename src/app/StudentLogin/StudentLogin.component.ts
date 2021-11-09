@@ -29,23 +29,35 @@ export class StudentLoginComponent implements OnInit {
 
 
      })
+     this.getallstudents()
+
   }
+  getallstudents(){
+    this.service.getAll().subscribe((response: any) => {
+      this.dataSource.data = response;
+      console.log(response)
+    });
+
+
+  }
+
+
 
   getall(){
 
     this.service.getAll()
     .subscribe((response: any)=>{
        const ap=response.find((a:any)=>{
-          console.log(a.UserEmail);
+          console.log(a.useremail);
          console.log(this.loginform.value.email)
-         console.log(a.UserPassword)
+         console.log(a.userPassword)
          console.log(this.loginform.value.password)
-         this.iddepaso=a.id;
-          return a.UserEmail === this.loginform.value.email && a.UserPassword===this.loginform.value.password;
+         this.iddepaso=a.userId;
+          return a.useremail === this.loginform.value.email && a.userPassword===this.loginform.value.password;
        });
         if(ap){
           alert("Login successfully");
-          this.loginform.reset();
+          //this.loginform.reset();
           this.route.navigate(['/User',this.iddepaso])
           this.Log=true;
         }else{

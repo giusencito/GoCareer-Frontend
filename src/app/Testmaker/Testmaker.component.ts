@@ -50,12 +50,12 @@ export class TestmakerComponent implements OnInit {
   }
 
 creartest(){
-this.Test.EspecialistId=this.Especialistnumber
+this.Test.especialistId=this.Especialistnumber
 if(this.type=='perzo'){
-  this.Test.Personalized=true
+  this.Test.personalized=true
 }
 else{
-  this.Test.Personalized=false
+  this.Test.personalized=false
 }
 this.registerTest()
 alert("Test iniciado")

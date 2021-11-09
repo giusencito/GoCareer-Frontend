@@ -94,8 +94,7 @@ export class QuestionCreateComponent implements OnInit {
    this.getallquestions()
    console.log("hola")
    this.isHidden=false
-   this.Question.Score=0
-   this.Question.TestId=this.Testnumber
+   this.Question.testid=this.Testnumber
    this.questioncreate=true;
    this.registerPreguntar()
    console.log("termino de registro")
@@ -107,12 +106,12 @@ export class QuestionCreateComponent implements OnInit {
 
 
 
-   this.Option.OptionName;
+   this.Option.optionName;
    console.log(this.questionid)
-   this.Option.QuestionId=this.questionid
-   this.Option.OptionName=this.Optionform.value.optionname
-   this.Option.Optionpoint=parseInt(this.Optionform.value.optinscore)
-   if(this.Option.QuestionId==this.questionid)
+   this.Option.questionId=this.questionid
+   this.Option.optionName=this.Optionform.value.optionname
+   this.Option.points=parseInt(this.Optionform.value.optinscore)
+   if(this.Option.questionId==this.questionid)
    {this.registeroption()
    this.Optionform.reset();}
   }

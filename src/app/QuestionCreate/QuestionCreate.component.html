@@ -5,7 +5,7 @@
 
 <div [formGroup]="Questionform">
 <mat-card-title >Cree Preguntas</mat-card-title>
-<input matinput  formControlName="questionname" [(ngModel)]="Question.QuestionName"  placeholder="Enter a Question" requiered class="form-control"  type="Questionname" >
+<input matinput  formControlName="questionname" [(ngModel)]="Question.questionName"  placeholder="Enter a Question" requiered class="form-control"  type="Questionname" >
 <button mat-raised-button class="buto"   [disabled]="!Questionform.valid ||questioncreate" (click)="crearpregunta()">Crear Pregunta</button>
 </div>
 <div>

@@ -45,10 +45,10 @@ ngAfterViewInit(): void {
     this.service.getById(id).subscribe((response:any)=>{
 
       this.actualuser=response;
-       console.log(this.actualuser);
-   this.actualusername=this.actualuser.UserName;
+       console.log(response[0]);
+   this.actualusername=response[0].userName;
    console.log(this.actualusername)
-   this.actualuserlastname=this.actualuser.UserLastName;
+   this.actualuserlastname=response[0].userLastname;
    console.log(this.actualuserlastname)
 
     });

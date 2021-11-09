@@ -1,6 +1,6 @@
 export interface Article {
-  id: number;
-  ArticleName: string;
-  ArticleDescription: string;
-  CareerId:number;
+  articleid: number;
+  articleName: string;
+  articleDescription: string;
+  careerid:number;
 }

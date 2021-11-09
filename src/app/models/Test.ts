@@ -1,9 +1,9 @@
 export interface Test{
 
-  Testid:number,
-  Personalized:boolean,
-  EspecialistId: number,
-  Testname:string
+  testid:number,
+  personalized:boolean,
+  especialistId: number,
+  testname:string
 
 
 

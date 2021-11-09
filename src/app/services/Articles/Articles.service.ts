@@ -7,8 +7,8 @@ import { Article } from 'src/app/models/Article';
   providedIn: 'root'
 })
 export class ArticlesService {
-basePath='http://localhost:3000/Article';
-basePathcareerArticles="http://localhost:3000/Career"
+basePath='https://gocareer-backendapi.azurewebsites.net/api/Articles';
+basePathcareerArticles="https://gocareer-backendapi.azurewebsites.net/api/Articles/Career"
 httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ delete(id: any) {
 getallarticlesbycarreer(id:any){
 
 
-  return this.http.get<Article>(`${this.basePathcareerArticles}/${id}/Article`, this.httpOptions)
+  return this.http.get<Article>(`${this.basePathcareerArticles}/${id}/Articles`, this.httpOptions)
   .pipe(
     retry(2),
     catchError(this.handleError));

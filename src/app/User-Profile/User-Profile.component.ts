@@ -40,10 +40,10 @@ export class UserProfileComponent implements OnInit {
 
       this.actualUser=response;
        console.log(this.actualUser);
-   this.actualusertname=this.actualUser.UserName;
+   this.actualusertname=response[0].userName;
    console.log(this.actualusertname)
-   this.actualuserlastname=this.actualUser.UserLastName;
-this.actualuseremail=this.actualUser.UserEmail
+   this.actualuserlastname=response[0].userLastname;
+this.actualuseremail=response[0].useremail
 
     });
 

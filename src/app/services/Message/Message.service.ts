@@ -9,7 +9,7 @@ import { Message } from 'src/app/models/Message';
 export class MessageService {
 
 
-  basePath='http://localhost:3000/Message'
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Messages'
   basePathformessagebyEspecialist='http://localhost:3000/Especialist'
 
   httpOptions = {

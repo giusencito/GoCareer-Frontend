@@ -51,7 +51,7 @@ dataSource1 !:MatTableDataSource<any>;
 
   this.Test =response;
   console.log(this.Test);
-   this.testtitle=this.Test.Testname;
+   this.testtitle=this.Test.testname;
 
     });
 

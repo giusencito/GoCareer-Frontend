@@ -22,13 +22,13 @@ export class CareerComponent implements OnInit {
    this.idnumber=id;
     this.getAllCareers()
 
-console.log(this.dataSource.data)
+
   }
 
   getAllCareers(){
     this.service.getAll().subscribe((response: any) => {
       this.dataSource.data = response;
-      console.log(response)
+      console.log(this.dataSource.data)
     });
 
 
@@ -37,7 +37,7 @@ console.log(this.dataSource.data)
 
 seearticles(carrer:number){
 
-
+  console.log(carrer)
   this.cd.navigate(['/User',this.idnumber,'Careers',carrer])
 
 

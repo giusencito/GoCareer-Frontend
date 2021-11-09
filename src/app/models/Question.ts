@@ -1,12 +1,7 @@
 export interface Question{
 
-  id:number,
-  QuestionName:string,
-  TestId:number,
-  Score:number
-
-
-
-
+  questionId:number,
+  questionName:string,
+  testid:number,
 
 }

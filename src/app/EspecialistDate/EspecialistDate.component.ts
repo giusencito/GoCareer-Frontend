@@ -77,9 +77,9 @@ export class EspecialistDateComponent implements OnInit {
 
       this.especialist=response;
        console.log(this.especialist);
-      this.nombre=this.especialist.EspecialistName;
-      this.apellido=this.especialist.EspecialistLastName;
-      this.infor=this.especialist.EspecialistInformation;
+      this.nombre=this.especialist.especialistName;
+      this.apellido=this.especialist.especialistLastName;
+      this.infor=this.especialist.especialistInformation;
     });
 
 
@@ -91,10 +91,10 @@ getmeeting(fecha:string){
 console.log(fecha)
 this.date=new Date(fecha);
 console.log(this.date)
-this.Meeting.EspecialistId=this.useride
-this.Meeting.Date=this.date;
-this.Meeting.Hour=this.date;
-this.Meeting.UserId=this.usermetting;
+this.Meeting.especialistId=this.useride
+this.Meeting.date=this.date;
+this.Meeting.hour=this.date;
+this.Meeting.userId=this.usermetting;
 this.NewMeeting();
 }
 
@@ -116,7 +116,7 @@ NewMessage(){
     this.dataSource2.data.push( {...response});
     this.dataSource2.data = this.dataSource1.data.map((o: any) => { return o; });
     alert("se añadio el mensaje")
-
+    this.messageform.reset();
   });
 
 
@@ -124,10 +124,10 @@ NewMessage(){
 
 
 sendMessage(){
-this.Message.UserId=this.usermetting;
-this.Message.EspecialistId=this.useride;
+this.Message.userId=this.usermetting;
+this.Message.especialistId=this.useride;
 this.NewMessage();
-this.messageform.reset();
+
 
 }
 

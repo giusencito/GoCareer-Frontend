@@ -1,8 +1,8 @@
 export interface Option{
 
-  id:number,
-  OptionName:string,
-  QuestionId:number,
-  Optionpoint:number
+  optionid:number,
+  optionName:string,
+  questionId:number,
+  points:number
 
 }

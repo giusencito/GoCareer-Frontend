@@ -7,7 +7,7 @@ import { Meeting } from 'src/app/models/Meeting';
   providedIn: 'root'
 })
 export class MeetingService {
-  basePath='http://localhost:3000/Meeting';
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Meetings';
   basePathmeetingbyespecialist='http://localhost:3000/Especialist'
   httpOptions = {
     headers: new HttpHeaders({

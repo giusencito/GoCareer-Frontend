@@ -53,8 +53,8 @@ export class AnswerMessageComponent implements OnInit {
 
       this.message=response;
        console.log(this.message);
-      this.messagdes=this.message.MessageDescription;
-      this.getidUser(this.message.UserId)
+      this.messagdes=this.message.messageDescription;
+      this.getidUser(this.message.userId)
     });
 
 
@@ -66,8 +66,8 @@ export class AnswerMessageComponent implements OnInit {
 
       this.user=response;
        console.log(this.user);
-      this.usernmae=this.user.UserName;
-      this.userlast=this.user.UserName
+      this.usernmae=this.user.userName;
+      this.userlast=this.user.userLastname
 
     });
 
@@ -84,9 +84,9 @@ this.route.navigate(['/Especialist',sos])
 
 
   newAnswer() {
-    this.service.update(this.message.id, this.message).subscribe((response: any) => {
+    this.service.update(this.message.messageid, this.message).subscribe((response: any) => {
       this.dataSource.data = this.dataSource.data.map((o: Message) => {
-        if (o.id === response.id) {
+        if (o.messageid === response.id) {
           o = response;
         }
         return o;

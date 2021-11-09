@@ -30,7 +30,7 @@
   <h1 >Mensaje a especialista</h1>
   <mat-form-field appearance="fill" class="area" [formGroup]="messageform">
     <mat-label>Mensaje a especialista {{nombre}}  {{apellido}}</mat-label>
-    <textarea formControlName="message" matInput type="message" [(ngModel)]="Message.MessageDescription"></textarea>
+    <textarea formControlName="message" matInput type="message" [(ngModel)]="Message.messageDescription"></textarea>
   </mat-form-field>
   <div class="button-row">
 <button mat-raised-button class="burea" (click)="sendMessage()" [disabled]="!messageform.valid">Enviar Mensaje</button>

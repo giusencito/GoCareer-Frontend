@@ -6,18 +6,18 @@
 <mat-grid-tile *ngFor="let element of dataSource.data">
 <mat-card>
 <mat-card-header>
-<mat-card-title>{{element.EspecialistName}}  {{element.EspecialistLastName}}</mat-card-title>
+<mat-card-title>{{element.especialistName}}  {{element.especialistLastName}}</mat-card-title>
 
 </mat-card-header>
 
 <mat-card-content>
 
-<h4>{{element.EspecialistInformation}}</h4>
+<h4>{{element.especialistInformation}}</h4>
 
 </mat-card-content>
 <mat-card-actions>
 
-<button mat-raised-button class="especialistSelect" (click)="especialistSelect(element.id)">Programar cita</button>
+<button mat-raised-button class="especialistSelect" (click)="especialistSelect(element.especialistId)">Programar cita</button>
 
 </mat-card-actions>
 

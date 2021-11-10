@@ -11,7 +11,7 @@ import {catchError, retry} from "rxjs/operators";
 export class TestService {
 
 
-  basePath='http://localhost:3000/Test'
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Tests'
   basePathcommom='http://localhost:3000/Test?Personalized_like=false'
   basePathperzo='http://localhost:3000/Test?Personalized_like=true'
   httpOptions = {

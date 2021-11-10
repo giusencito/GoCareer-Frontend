@@ -8,8 +8,8 @@ import { Question } from 'src/app/models/Question';
 })
 export class QuestionService {
 
-  basePath='http://localhost:3000/Question'
-basePathQuestionPerTest='http://localhost:3000/Test'
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Questions'
+basePathQuestionPerTest='https://gocareer-backendapi.azurewebsites.net/api/Test'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

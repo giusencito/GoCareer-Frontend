@@ -35,10 +35,10 @@ export class HomeEspecialistComponent implements OnInit {
 
       this.actualEspecialist=response;
        console.log(this.actualEspecialist);
-   this.actualEspecialistname=this.actualEspecialist.especialistName;
+   this.actualEspecialistname=response[0].especialistName;
    console.log(this.actualEspecialistname)
-   this.actualEspecialistlastname=this.actualEspecialist.especialistLastName;
-   console.log(this.actualEspecialist.especialistLastName)
+   this.actualEspecialistlastname=response[0].especialistLastName;
+   
 
     });
 

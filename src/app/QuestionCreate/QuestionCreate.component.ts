@@ -61,7 +61,7 @@ export class QuestionCreateComponent implements OnInit {
     this.service.create(this.Question).subscribe((response: any) => {
       this.dataSource1.data.push( {...response});
       this.dataSource1.data = this.dataSource1.data.map((o: any) => { return o; });
-
+      this.getallquestions()
     });
 
 
@@ -82,7 +82,7 @@ export class QuestionCreateComponent implements OnInit {
     this.service.getAll().subscribe((response: any) => {
       this.dataSource1.data = response;
       console.log(response)
-      this.questionid=this.dataSource1.data.length
+      this.questionid=response.length
       console.log(this.questionid)
     });
 
@@ -91,7 +91,7 @@ export class QuestionCreateComponent implements OnInit {
   }
 
   crearpregunta(){
-   this.getallquestions()
+
    console.log("hola")
    this.isHidden=false
    this.Question.testid=this.Testnumber

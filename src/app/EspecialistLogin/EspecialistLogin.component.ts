@@ -34,12 +34,12 @@ export class EspecialistLoginComponent implements OnInit {
     this.service.getAll()
     .subscribe((response: any)=>{
        const ap=response.find((a:any)=>{
-          console.log(a.EspecialistEmail);
+          console.log(a.especialistEmail);
          console.log(this.loginform.value.email)
-         console.log(a.EspecialistPassword)
+         console.log(a.especialistPassword)
          console.log(this.loginform.value.password)
-         this.iddepaso=a.id;
-          return a.EspecialistEmail === this.loginform.value.email && a.EspecialistPassword===this.loginform.value.password;
+         this.iddepaso=a.especialistId;
+          return a.especialistEmail === this.loginform.value.email && a.especialistPassword===this.loginform.value.password;
        });
         if(ap){
           alert("Login successfully");

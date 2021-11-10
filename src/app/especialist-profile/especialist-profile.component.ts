@@ -35,12 +35,12 @@ export class EspecialistProfileComponent implements OnInit {
 
       this.actualEspecialist=response;
        console.log(this.actualEspecialist);
-   this.actualEspecialistname=this.actualEspecialist.especialistName;
+   this.actualEspecialistname=response[0].especialistName;
    console.log(this.actualEspecialistname)
-   this.actualEspecialistlastname=this.actualEspecialist.especialistLastName;
+   this.actualEspecialistlastname=response[0].especialistLastName;
    console.log(this.actualEspecialist.especialistLastName)
-this.actualEspecialistemail=this.actualEspecialist.especialistEmail
-this.actualEspecialistinformation=this.actualEspecialist.especialistInformation
+this.actualEspecialistemail=response[0].especialistEmail
+this.actualEspecialistinformation=response[0].especialistInformation
     });
 
 

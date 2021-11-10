@@ -9,8 +9,8 @@ import {catchError, retry} from "rxjs/operators";
 })
 export class OptionService {
 
-  basePath='http://localhost:3000/Option'
-basePathOptionsPerQuestion='http://localhost:3000/Question'
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Options'
+basePathOptionsPerQuestion='https://gocareer-backendapi.azurewebsites.net/api/Question'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

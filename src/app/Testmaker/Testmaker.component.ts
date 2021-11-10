@@ -79,7 +79,7 @@ regresar(){
 getAllTests(){
   this.service.getAll().subscribe((response: any) => {
     this.dataSource2.data = response;
-    console.log(response)
+    console.log( this.dataSource2.data.length)
   });
 
 

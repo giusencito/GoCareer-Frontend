@@ -6,9 +6,9 @@
   <mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="onResize($event)" >
    <mat-grid-tile *ngFor="let element of dataSource1.data">
 <mat-card>
-   <mat-card-title>{{element.Testname}}</mat-card-title>
+   <mat-card-title>{{element.testname}}</mat-card-title>
 
-  <button mat-button class="icon" (click)="entaraltest(element.id)"><mat-icon >chevron_right</mat-icon></button>
+  <button mat-button class="icon" (click)="entaraltest(element.testid)"><mat-icon >chevron_right</mat-icon></button>
 </mat-card>
    </mat-grid-tile>
 
@@ -22,9 +22,9 @@
 
 
       <mat-card>
-        <mat-card-title>{{element.Testname}}</mat-card-title>
+        <mat-card-title>{{element.testname}}</mat-card-title>
 
-       <button mat-button class="icon" (click)="entaraltest(element.id)"><mat-icon >chevron_right</mat-icon></button>
+       <button mat-button class="icon" (click)="entaraltest(element.testid)"><mat-icon >chevron_right</mat-icon></button>
      </mat-card>
 
 

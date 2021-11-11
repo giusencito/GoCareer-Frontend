@@ -12,8 +12,8 @@ export class TestService {
 
 
   basePath='https://gocareer-backendapi.azurewebsites.net/api/Tests'
-  basePathcommom='http://localhost:3000/Test?Personalized_like=false'
-  basePathperzo='http://localhost:3000/Test?Personalized_like=true'
+  basePathcommom='https://gocareer-backendapi.azurewebsites.net/api/Personalized/false/Tests'
+  basePathperzo='https://gocareer-backendapi.azurewebsites.net/api/Personalized/true/Tests'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

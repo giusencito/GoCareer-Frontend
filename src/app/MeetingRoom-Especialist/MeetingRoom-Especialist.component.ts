@@ -43,7 +43,7 @@ export class MeetingRoomEspecialistComponent implements OnInit {
 
     this.service.getById(id).subscribe((response:any)=>{
 
-      this.actualEspecialist=response;
+      this.actualEspecialist=response[0];
        console.log(this.actualEspecialist);
    this.actualEspecialistname=this.actualEspecialist.especialistName;
    console.log(this.actualEspecialistname)
@@ -60,7 +60,7 @@ export class MeetingRoomEspecialistComponent implements OnInit {
 
     this.service2.getById(id).subscribe((response:any)=>{
 
-      this.actualUser=response;
+      this.actualUser=response[0];
        console.log(this.actualUser);
    this.actualUsername=this.actualUser.userName;
    console.log(this.actualUsername)

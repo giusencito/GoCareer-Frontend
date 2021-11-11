@@ -45,7 +45,7 @@ else if (result<13){
 return 2
 }
 else{
-  return 3
+  return 2
 }
 
 }
@@ -55,7 +55,7 @@ getidCareer(id:number){
 
 this.Career =response;
 console.log(this.Career);
- this.careername1=this.Career.careerName;
+ this.careername1=response[0].careerName;
 
   });
 
@@ -65,7 +65,8 @@ console.log(this.Career);
 getAllWorks(){
   this.service2.getallworksbycarreer(this.resultado(this.resultnumber)).subscribe((response: any) => {
     this.dataSource.data = response;
-    console.log(response)
+    console.log("trabajos")
+    console.log(this.dataSource.data[0])
   });
 
 

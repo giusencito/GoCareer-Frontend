@@ -8,9 +8,9 @@
 <mat-card-content>
 <mat-grid-list [cols]="breakpoint" rowHeight="500px" (window:resize)="onResize($event)">
 <mat-grid-tile *ngFor="let element of dataSource.data">
-<button mat-raised-button class="but" (click)="entermessage(element.id)">
+<button mat-raised-button class="but" (click)="entermessage(element.messageid)">
 
-<p>{{element.MessageDescription}}</p>
+<p>{{element.messageDescription}}</p>
 
 <p>Click para Responder</p>
 

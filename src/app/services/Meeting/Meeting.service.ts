@@ -8,7 +8,7 @@ import { Meeting } from 'src/app/models/Meeting';
 })
 export class MeetingService {
   basePath='https://gocareer-backendapi.azurewebsites.net/api/Meetings';
-  basePathmeetingbyespecialist='http://localhost:3000/Especialist'
+  basePathmeetingbyespecialist='https://gocareer-backendapi.azurewebsites.net/api/Especialists'
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ create(item: any): Observable<Meeting> {
 getallMeetingsbyespecialist(id:any){
 
 
-  return this.http.get<Meeting>(`${this.basePathmeetingbyespecialist}/${id}/Meeting`, this.httpOptions)
+  return this.http.get<Meeting>(`${this.basePathmeetingbyespecialist}/${id}/Meetings`, this.httpOptions)
   .pipe(
     retry(2),
     catchError(this.handleError));

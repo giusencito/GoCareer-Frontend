@@ -33,8 +33,9 @@ export class MessageComponent implements OnInit,AfterViewInit {
    let pod=parseInt(this.router.snapshot.paramMap.get('id')!);
    let id= pod;
    this.especialistide=id;
+   console.log(this.especialistide)
    this.getMessage(this.especialistide)
-   this.getUserse()
+   //this.getUserse()
 
 
   }
@@ -93,6 +94,7 @@ ngAfterViewInit() {
 }
 
 entermessage(id:number){
+  console.log(id)
   this.cd.navigate(['/Especialist',this.especialistide,'Messages',id])
 }
 

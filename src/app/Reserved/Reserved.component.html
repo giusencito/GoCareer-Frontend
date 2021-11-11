@@ -8,11 +8,11 @@
 <mat-card>
 
 <mat-card-title>Consulta</mat-card-title>
-<p class="ro">{{getfecha(element.Date)}}</p>
-<p class="ro">{{gethour(element.Date)}}</p>
+<p class="ro">{{getfecha(element.date)}}</p>
+<p class="ro">{{gethour(element.date)}}</p>
 <mat-card-actions>
 
-  <button mat-raised-button class="but" (click)="iraconsulta(element.id,element.UserId)"><mat-icon>forward</mat-icon>Reserva de consultas</button>
+  <button mat-raised-button class="but" (click)="iraconsulta(element.meetingId,element.userId)"><mat-icon>forward</mat-icon>Reserva de consultas</button>
 </mat-card-actions>
 
 </mat-card>

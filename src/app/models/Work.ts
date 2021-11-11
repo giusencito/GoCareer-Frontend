@@ -1,9 +1,9 @@
 export interface Work {
 
-  Workid:number,
-  WorkName:string
-  WorkDescription:string,
-  CareerId:number
+  workid:number,
+  workName:string
+  workDescription:string,
+  careerid:number
 
 
 

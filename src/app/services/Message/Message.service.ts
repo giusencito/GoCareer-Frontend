@@ -10,7 +10,7 @@ export class MessageService {
 
 
   basePath='https://gocareer-backendapi.azurewebsites.net/api/Messages'
-  basePathformessagebyEspecialist='http://localhost:3000/Especialist'
+  basePathformessagebyEspecialist='https://gocareer-backendapi.azurewebsites.net/api/Especialists'
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -70,7 +70,7 @@ create(item: any): Observable<Message> {
 
 getallMessagesbyEspecialist(id:any){
 
-  return this.http.get<Message>(`${this.basePathformessagebyEspecialist}/${id}/Message`, this.httpOptions)
+  return this.http.get<Message>(`${this.basePathformessagebyEspecialist}/${id}/Messages`, this.httpOptions)
   .pipe(
     retry(2),
     catchError(this.handleError));

@@ -14,6 +14,7 @@ export class TestComponent implements OnInit {
 public Usernumber!:number;
 public testnumber!:number
 public testtitle!:string
+total!:number
 breakpoint!: number;
 Test!:Test
 datohijo:number=0
@@ -69,7 +70,7 @@ dataSource1 !:MatTableDataSource<any>;
 terminartest(){
 
 
-
+console.log(this.datohijo)
   this.cd.navigate(['/User',this.Usernumber,'Test_Vocacional',this.testnumber,'Result', this.datohijo])
 
 

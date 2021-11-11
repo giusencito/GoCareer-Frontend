@@ -9,8 +9,8 @@ import {catchError, retry} from "rxjs/operators";
 export class WorkService {
 
 
-  basePath='http://localhost:3000/Work';
-  basePathcareerWorks='http://localhost:3000/Career'
+  basePath='https://gocareer-backendapi.azurewebsites.net/api/Works';
+  basePathcareerWorks='https://gocareer-backendapi.azurewebsites.net/api/Career'
 
   httpOptions = {
     headers: new HttpHeaders({

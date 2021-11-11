@@ -8,8 +8,8 @@
   <mat-grid-tile  *ngFor="let element of dataSource1.data">
 
     <mat-card class="card">
-      <mat-card-title>{{element.QuestionName}}</mat-card-title>
-      <app-Option [idquestion]='element.id' (respuesta)="Respuestarecibida($event)"></app-Option>
+      <mat-card-title>{{element.questionName}}</mat-card-title>
+      <app-Option [idquestion]='element.questionId' (respuesta)="Respuestarecibida($event)"></app-Option>
 
     </mat-card>
 

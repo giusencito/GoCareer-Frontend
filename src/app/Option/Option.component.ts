@@ -37,6 +37,7 @@ constructor(private service:OptionService,private formbuilder:FormBuilder ) {
 
 
 
+
   getidQuestion(id:number){
 
     this.service.getallOptionsbyQuestion(id).subscribe((response: any) => {
@@ -51,7 +52,7 @@ constructor(private service:OptionService,private formbuilder:FormBuilder ) {
 
       }
 
-      console.log(this.checkboxes)
+      //console.log(this.checkboxes)
 
 
 
@@ -126,33 +127,12 @@ return en;
 
 changevalue(id:number){
 
-  var en=this.checkboxes[id]
-
-    console.log("comienzo")
-    for(var i in this.checkboxes ){
-
-       console.log(id)
-       console.log(this.checkboxes.indexOf(this.checkboxes[i]))
-       if(id==this.checkboxes.indexOf(this.checkboxes[i])){
-        console.log("se vuelve 0")
-        this.checkboxes[id]=0
-       }
+  console.log(this.dataSource1.data)
 
 
-    }
-    console.log(this.checkboxes)
-    for(var j in this.checkboxes){
-        console.log(this.fast)
-       if(id!=this.checkboxes.indexOf(this.checkboxes[j])){
-        this.checkboxes[j]=this.fast
-       }
-       this.fast=this.fast+1
 
-    }
 
-  var d=this.checkboxes[0]
-  console.log(d)
- var k=this.dataSource1.data[d].Optionpoint
+ var k=this.dataSource1.data[id].points
  console.log(k)
 this.respuesta.emit(k)
 

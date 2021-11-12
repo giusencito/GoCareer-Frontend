@@ -23,12 +23,12 @@ describe('Service: Especialist', () => {
     expect(service.getAll()).toBeTruthy();
  });
  it('should have post function', () => {
-  const newEmp:Especialist= {Especialistid:1,EspecialistName:"aaaa",EspecialistLastName:"bbbb",EspecialistEmail:"ccc",EspecialistPassword:"aaass",EspecialistInformation:"aaasq"} ;
+  const newEmp:Especialist= {especialistId:1,especialistName:"aaaa",especialistLastName:"bbbb",especialistEmail:"ccc",especialistPassword:"aaass",especialistInformation:"aaasq"} ;
   const service: EspecialistService = TestBed.get(EspecialistService);
   expect(service.create(newEmp)).toBeTruthy();
 });
 it('should have update function', () => {
-  const newEmp:Especialist= {Especialistid:1,EspecialistName:"aaaa",EspecialistLastName:"bbbb",EspecialistEmail:"ccc",EspecialistPassword:"aaass",EspecialistInformation:"aaasq"} ;
+  const newEmp:Especialist= {especialistId:1,especialistName:"aaaa",especialistLastName:"bbbb",especialistEmail:"ccc",especialistPassword:"aaass",especialistInformation:"aaasq"} ;
   const service: EspecialistService = TestBed.get(EspecialistService);
   expect(service.update(1,newEmp)).toBeTruthy();
 });

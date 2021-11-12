@@ -24,13 +24,13 @@ describe('Service: Work', () => {
  });
  it('should have post function', () => {
   const date=new Date ();
- const newEmp:Work= {Workid:1,WorkName:"true",WorkDescription:"1",CareerId:2} ;
+ const newEmp:Work= {workid:1,workName:"true",workDescription:"1",careerid:2} ;
  const service: WorkService = TestBed.get(WorkService);
  expect(service.create(newEmp)).toBeTruthy();
 });
 it('should have update function', () => {
  const date=new Date ();
- const newEmp:Work= {Workid:1,WorkName:"true",WorkDescription:"1",CareerId:2} ;
+ const newEmp:Work= {workid:1,workName:"true",workDescription:"1",careerid:2} ;
  const service: WorkService = TestBed.get(WorkService);
  expect(service.update(1,newEmp)).toBeTruthy();
 });

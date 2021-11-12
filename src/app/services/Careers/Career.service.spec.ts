@@ -24,12 +24,12 @@ describe('Service: Career', () => {
     expect(service.getAll()).toBeTruthy();
  });
  it('should have post function', () => {
-  const newEmp:Career= {id:1,"CareerName":"aaaa","CareerDescription":"bbbb"} ;
+  const newEmp:Career= {careerid:1,"careerName":"aaaa","careerDescription":"bbbb"} ;
   const service: CareerService = TestBed.get(CareerService);
   expect(service.create(newEmp)).toBeTruthy();
 });
 it('should have update function', () => {
-  const newEmp:Career= {id:1,"CareerName":"aaaa","CareerDescription":"bbbb"} ;
+  const newEmp:Career= {careerid:1,"careerName":"aaaa","careerDescription":"bbbb"} ;
   const service: CareerService = TestBed.get(CareerService);
   expect(service.update(1,newEmp)).toBeTruthy();
 });

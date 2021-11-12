@@ -24,13 +24,13 @@ describe('Service: Users', () => {
  });
  it('should have post function', () => {
   const date=new Date ();
- const newEmp:User= {UserId:1,UserName:"true",UserLastName:"1",UserEmail:"2",UserPassword:"aaa"} ;
+ const newEmp:User= {userId:1,userName:"true",userLastname:"1",useremail:"2",userPassword:"aaa"} ;
  const service: UsersService = TestBed.get(UsersService);
  expect(service.create(newEmp)).toBeTruthy();
 });
 it('should have update function', () => {
  const date=new Date ();
- const newEmp:User= {UserId:1,UserName:"true",UserLastName:"1",UserEmail:"2",UserPassword:"aaa"} ;
+ const newEmp:User= {userId:1,userName:"true",userLastname:"1",useremail:"2",userPassword:"aaa"} ;
  const service: UsersService = TestBed.get(UsersService);
  expect(service.update(1,newEmp)).toBeTruthy();
 });

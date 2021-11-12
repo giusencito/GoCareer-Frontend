@@ -29,12 +29,12 @@ describe('Service: Articles', () => {
     expect(service.getAll()).toBeTruthy();
  });
  it('should have post function', () => {
-  const newEmp:Article= {id:1,"ArticleName":"aaaa","ArticleDescription":"bbbb","CareerId":2} ;
+  const newEmp:Article= {articleid:1,"articleName":"aaaa","articleDescription":"bbbb","careerid":2} ;
   const service: ArticlesService = TestBed.get(ArticlesService);
   expect(service.create(newEmp)).toBeTruthy();
 });
 it('should have update function', () => {
-  const newEmp:Article= {id:1,"ArticleName":"aaaa","ArticleDescription":"bbbb","CareerId":2} ;
+  const newEmp:Article= {articleid:1,"articleName":"aaaa","articleDescription":"bbbb","careerid":2} ;
   const service: ArticlesService = TestBed.get(ArticlesService);
   expect(service.update(1,newEmp)).toBeTruthy();
 });

@@ -25,13 +25,13 @@ describe('Service: Meeting', () => {
 
  it('should have post function', () => {
    const date=new Date ();
-  const newEmp:Meeting= {id:1,UserId:1,EspecialistId:1,Date:date,Hour:date} ;
+  const newEmp:Meeting= {  meetingId:1,userId:1,especialistId:1,date:date,hour:date} ;
   const service: MeetingService = TestBed.get(MeetingService);
   expect(service.create(newEmp)).toBeTruthy();
 });
 it('should have update function', () => {
   const date=new Date ();
-  const newEmp:Meeting= {id:1,UserId:1,EspecialistId:1,Date:date,Hour:date} ;
+  const newEmp:Meeting= {meetingId:1,userId:1,especialistId:1,date:date,hour:date} ;
   const service: MeetingService = TestBed.get(MeetingService);
   expect(service.update(1,newEmp)).toBeTruthy();
 });
